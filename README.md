@@ -1,3 +1,4 @@
+```
 research-paper-ai-assistant/
 ├── README.md                        ← Main README (All project overview)
 ├── project1_summarizer/             ← Project 1
@@ -11,3 +12,4 @@ research-paper-ai-assistant/
 │   └── (same structure)
 └── project3_multi_agent/            ← Project 3
     └── (same structure)
+```

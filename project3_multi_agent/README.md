@@ -47,4 +47,11 @@ pip install -r requirements.txt
 export API_KEY="your_key_here"
 python app/streamlit_app.py
 ```
-
+## 🛠️ Technologies
+| Component | Technology |
+|-----------|-----------|
+| LLM | API (LLaMA 3.3 70B) |
+| Agent Framework | Custom Multi-Agent Architecture |
+| PDF Processing | PyMuPDF |
+| UI | Gradio |
+| Deployment | Hugging Face Spaces |

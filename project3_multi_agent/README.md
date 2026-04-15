@@ -18,7 +18,7 @@ Agent 1: Summarizer ──┐
 Agent 2: Citation   ──┼── (src/agents.py)
 Agent 3: Gap Finder ──┘
 ↓
-LLM: Groq API (LLaMA 3.3 70B)
+LLM: API (LLaMA 3.3 70B)
 ↓
 Knowledge Documents (src/ingestion.py)
 ```

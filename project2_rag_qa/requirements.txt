@@ -1,1 +1,5 @@
-
+groq
+pymupdf
+gradio
+chromadb
+sentence-transformers

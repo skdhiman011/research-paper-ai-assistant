@@ -73,13 +73,3 @@ with gr.Blocks(title="Research Paper Summarizer", theme=gr.themes.Soft()) as app
               ↓
         Groq API (LLaMA 3.3 70B)
 
-""")
-
-        with gr.Column(scale=2):
-            output = gr.Markdown(label="📊 Analysis Result")
-
-    submit_btn.click(fn=process_paper, inputs=pdf_input, outputs=output)
-
-
-if __name__ == "__main__":
-    app.launch()

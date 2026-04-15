@@ -64,3 +64,30 @@ with gr.Blocks(title="Multi-Agent Research Assistant", theme=gr.themes.Soft()) a
             status_box = gr.Markdown("_Upload a PDF and click the button..._")
             gr.Markdown("""
             **Multi-Agent Flow:**
+            PDF Upload
+            ↓
+        Orchestrator
+            ├── Agent 1: Summarizer
+            ├── Agent 2: Citation Bot
+            └── Agent 3: Gap Finder
+       
+        """)
+
+        with gr.Column(scale=2):
+            with gr.Tabs():
+                with gr.Tab("📋 Agent 1: Summary"):
+                    summary_out = gr.Markdown()
+                with gr.Tab("📚 Agent 2: Citations"):
+                    citation_out = gr.Markdown()
+                with gr.Tab("🔭 Agent 3: Research Gaps"):
+                    gap_out = gr.Markdown()
+
+    run_btn.click(
+        fn=run_agents,
+        inputs=pdf_input,
+        outputs=[status_box, summary_out, citation_out, gap_out]
+    )
+
+
+if __name__ == "__main__":
+    app.launch()

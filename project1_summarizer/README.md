@@ -9,6 +9,7 @@ Upload any research paper PDF and get instant AI-powered analysis including Summ
 👉 [Open Live App](https://huggingface.co/spaces/skdhiman011/research-paper-summarizer)
 
 ## 🏗️ Architecture
+```
 User Interface (Gradio)
 ↓
 Application Backend (app/streamlit_app.py)
@@ -18,8 +19,9 @@ LLM + Prompting (src/agents.py)
 PDF Ingestion (src/ingestion.py)
 ↓
 Knowledge Documents (data/raw/)
-
+```
 ## 📁 Folder Structure
+```
 project1_summarizer/
 ├── data/
 │   ├── raw/          ← Upload PDF files here
@@ -35,7 +37,7 @@ project1_summarizer/
 │   └── streamlit_app.py ← Gradio UI
 ├── requirements.txt
 └── README.md
-
+```
 ## ⚙️ How to Run
 ```bash
 pip install -r requirements.txt

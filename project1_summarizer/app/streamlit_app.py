@@ -65,3 +65,21 @@ with gr.Blocks(title="Research Paper Summarizer", theme=gr.themes.Soft()) as app
             submit_btn = gr.Button("🔍 Analyze Paper", variant="primary", size="lg")
             gr.Markdown("""
             **Architecture:**
+        User Interface (Gradio)
+              ↓
+        ingestion.py (PDF → Text)
+              ↓
+        agents.py (LLM Summarization)
+              ↓
+        Groq API (LLaMA 3.3 70B)
+
+""")
+
+        with gr.Column(scale=2):
+            output = gr.Markdown(label="📊 Analysis Result")
+
+    submit_btn.click(fn=process_paper, inputs=pdf_input, outputs=output)
+
+
+if __name__ == "__main__":
+    app.launch()
